@@ -1,20 +1,25 @@
 <template>
-  <ul>
-      <li v-for="ninja in ninjas">{{ninja}}</li>
-  </ul>
+  <div>
+    <h1>List of ninjas</h1>
+    <ul>
+      <li v-for="ninja in ninjas">{{ ninja }}</li>
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      ninjas: ['Yoshi', 'Mario', 'Ryu']
-    }
+      ninjas: ["Yoshi", "Mario", "Ryu"]
+    };
   },
-  methods:{
-  }
-}
+  methods: {}
+};
 </script>
 
-<style>
+<style scoped>
+h1{
+    color: green;
+}
 </style>
