@@ -1,11 +1,11 @@
 <template>
-<div>
-  <app-header></app-header>
-  
-  <app-ninja v-bind:ninjas="ninjas"></app-ninja>
+  <div>
+    <app-header v-bind:title="title"></app-header>
 
-  <app-footer></app-footer>
-</div>
+    <app-ninja v-bind:ninjas="ninjas"></app-ninja>
+
+    <app-footer v-bind:title="title"></app-footer>
+  </div>
 </template>
 
 <script>
@@ -27,14 +27,14 @@ export default {
             {name: 'Tango', speciality: 'Conditionals', show: false},
             {name: 'Kami', speciality: 'Webpack', show: false},
             {name: 'Koshi', speciality: 'Data Diggin', show: false},
-        ]
+        ],
+        title: "Vue Ninja"
     }
+    
   },
   methods:{
   }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
