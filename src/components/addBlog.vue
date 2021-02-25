@@ -4,14 +4,15 @@
           <h2>Add a new blog Post</h2>
           <form action="">
               <label for="">Blog Title:</label>
-              <input type="text" v-model="blog.title" required>
+              <input type="text" v-model.lazy="blog.title" required>
               <label for="">Blog Content</label>
-              <textarea name="" id="" cols="30" rows="10" v-model="blog.content"></textarea>
+              <textarea name="" id="" cols="30" rows="10" v-model.lazy="blog.content"></textarea>
           </form>
           <div id="preview">
               <h3>Preview Blog</h3>
               <p>Blog title: {{blog.title}}</p>
-              <p>Blog content: {{blog.content}}</p>
+              <p>Blog content:</p>
+              <p>{{blog.content}}</p>
           </div>
       </div>
   </div>
